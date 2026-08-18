@@ -81,7 +81,7 @@ weighted avg       0.81      0.81      0.80      1274
 
 ## Limitations & Next Steps
 
-The dominance of Session 2 features means the model largely **confirms** an outcome that is already emerging rather than **predicting** it early. The main lever for improvement is strengthening Session 1-only features to enable earlier, more actionable predictions. It is more a model of nowcasting rather than forecasting.
+The dominance of Session 2 features means the model largely **confirms** an outcome that is already emerging rather than **predicting** it early. The main lever for improvement is strengthening Session 1-only features to enable earlier, more actionable predictions. It is more a model of **nowcasting** rather than **forecasting**.
 
 ## Repository Structure
 
