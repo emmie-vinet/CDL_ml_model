@@ -55,7 +55,7 @@ Block C notably combines rule-based keyword lexicons (objection vs. endorsement 
 - **Accuracy**: 81%
 - **Recall (Mentored class)**: 93% at the default 0.5 threshold
 
-![alt text](evaluation.png)
+![Performance metrics](outputs/evaluation.png)
 
 ```
 === FINAL RESULTS ===
@@ -73,11 +73,11 @@ weighted avg       0.81      0.81      0.80      1274
 
 **Cost-sensitive threshold selection**: TPR (recall on Mentored) and TNR (specificity on Dropped) were computed across all decision thresholds. The two curves cross around **0.72**, where the model trades recall on the Mentored class for a substantial gain in TNR (from 61% at the default 0.5 threshold to 77% at 0.72). This reflects the asymmetric cost structure of the problem : a false "Mentored" prediction (Type I error, false positive) commits program resources to a venture that will actually be dropped, while a false "Dropped" prediction (Type II error, false negative) is a lower-cost missed opportunity. The threshold was therefore selected to minimize the costlier error type rather than to maximize raw accuracy.
 
-![alt text](threshold_plot.png)
+![Threshold analysis](outputs/threshold_plot.png)
 
 **Feature importance**: Session 2 features (`d_s1_hand_rate_s2`, `d_hands_received_s1_at_s2`, mentor engagement counts) dominate the top of the ranking.
 
-![alt text](feature_importance.png)
+![Feature importance graph](outputs/feature_importance.png)
 
 ## Limitations & Next Steps
 
